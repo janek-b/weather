@@ -2,12 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>weather</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="well">
@@ -19,18 +20,77 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="well">
-            <dl class="dl-horizontal">
+            <h3>Current Weather</h3>
+            <dl id="current" class="dl-horizontal">
               <dt>City</dt>
-              <dd id="city"></dd>
+              <dd class="city"></dd>
               <dt>Condition</dt>
-              <dd id="condition"></dd>
+              <dd class="condition"></dd>
               <dt>Temp</dt>
-              <dd id="temp"></dd>
+              <dd class="temp"></dd>
               <dt>High</dt>
-              <dd id="high"></dd>
+              <dd class="high"></dd>
               <dt>Low</dt>
-              <dd id="low"></dd>
+              <dd class="low"></dd>
             </dl>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well">
+            <h3>5 Day Forecast</h3>
+            <h5 class="city"></h5>
+            <div class="row">
+              <div class="col-sm-2">
+                <ul>
+                  <li>Day</li>
+                  <li>Condition</li>
+                  <li>High</li>
+                  <li>Low</li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <ul id="1">
+                  <li class="day"></li>
+                  <li class="condition"></li>
+                  <li class="high"></li>
+                  <li class="low"></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <ul id="2">
+                  <li class="day"></li>
+                  <li class="condition"></li>
+                  <li class="high"></li>
+                  <li class="low"></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <ul id="3">
+                  <li class="day"></li>
+                  <li class="condition"></li>
+                  <li class="high"></li>
+                  <li class="low"></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <ul id="4">
+                  <li class="day"></li>
+                  <li class="condition"></li>
+                  <li class="high"></li>
+                  <li class="low"></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <ul id="5">
+                  <li class="day"></li>
+                  <li class="condition"></li>
+                  <li class="high"></li>
+                  <li class="low"></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
