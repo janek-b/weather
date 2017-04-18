@@ -52,7 +52,4 @@ Weather.prototype.getForecast = function (city, displayForecast) {
   });
 };
 
-
-
-
 exports.weatherModule = Weather;
