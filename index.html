@@ -7,6 +7,33 @@
     <title>weather</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="well">
+            <input id="location" type="text" class="form-control" placeholder="Enter a location">
+            <button id="getWeather" type="button" class="btn btn-primary">Check Weather</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="well">
+            <dl class="dl-horizontal">
+              <dt>City</dt>
+              <dd id="city"></dd>
+              <dt>Condition</dt>
+              <dd id="condition"></dd>
+              <dt>Temp</dt>
+              <dd id="temp"></dd>
+              <dt>High</dt>
+              <dd id="high"></dd>
+              <dt>Low</dt>
+              <dd id="low"></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
